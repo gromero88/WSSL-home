@@ -1,8 +1,27 @@
 <!DOCTYPE html> <html><head>
         <title>WSSL home</title>
+        <link href="https://fonts.googleapis.com/css?family=Barlow&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&amp;display=swap" rel="stylesheet">
     <style>body {
     background: black;
 
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Barlow';
+    background-image: url("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/87964571_10157846037321718_6756175000480251904_n.jpg?_nc_cat=111&_nc_sid=8024bb&_nc_ohc=U7Zypv4-ajEAX-Mz0B0&_nc_ht=scontent-lga3-1.xx&oh=7a966f84900502f8d27b069c406db7a8&oe=5EFBC392");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Barlow';
+    text-shadow: 2px 2px 5px #999;
 }
 
 #header {
@@ -13,53 +32,88 @@
 .logoTwo {
     width: 60px;
 }
-.nav{
-    color:white;
-    padding:20px;
-    }
-    .navigation{
-       
+
+.nav {
+    color: white;
+    padding: 20px;
+}
+
+.navigation {
+
     display: flex;
     justify-content: space-around;
 }
-        .button {
-  border-radius: 4px;
-  background-color: #000;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+.mes{color:white;
+font-family: 'Inconsolata' ;
+text-align:center;
+font-size:20px;
+}
+.button {
+    border-radius: 4px;
+    background-color: #000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
 .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .button:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 .button:hover span:after {
-  opacity: 1;
-  right: 0;
-}</style></head>
+    opacity: 1;
+    right: 0;
+}
+
+.home {
+    border: #222 solid 2px;
+}
+
+.mvp {
+    display: flex;
+    justify-content: center;
+}
+.gallery{
+    width:300px;
+    padding:10px;
+    height:auto;
+    align-self: center;
+   
+    }
+    #playerpic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+      display: flex;
+      justify-content:center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+    }</style></head>
     <body>
         <div id="container">
             <div id="header">
@@ -72,12 +126,35 @@
                 </div>
 
             </div>
+            <div>
+                <h1>WCS Staff Sports League</h1>
+            </div>
             <div class="navigation">
-                <button onclick="window.location.href = 'https://gromero88.github.io/WSSL-home';" class="nav button"><span>Home</span></button>
+                <button onclick="window.location.href = 'https://gromero88.github.io/WSSL-home';" class="nav button home"><span>Home</span></button>
                 <button onclick="window.location.href = 'https://gromero88.github.io/WSSL-players';" class="nav button"><span>Players</span></button>
                 <button onclick="window.location.href = 'https://gromero88.github.io/WSSL-thecomish';" class="nav button"><span>Comish</span></button>
                 <button onclick="window.location.href = 'https://gromero88.github.io/WSSL-media';" class="nav button"><span>Media</span></button>
 
+            </div>
+            <div class="main">
+                <h2>MVP voting as of 2/28/2020</h2>
+                <div class="mvp">
+                    <img src="https://lh3.googleusercontent.com/6UYs_J4scZPCJF4BEGbc1n0UT_TqsL0qwrWYvPzokeNEfhwpzKvNiJIot2km4353ncWW3j3aV2hxPvaEhGqauFhewE1tuEIjPfkyd5SxLgJFJKQdydE=w1280">
+                </div>
+                <h2 class="mes">A message from the commissioner</h2>
+                <p class="mes">"These are the rules of Floor Ball: I dont know them."</p>
+            </div>
+            <h2>A few pictures from 2/26/2020</h2>
+            <div class="row">
+            <img class="gallery" src="https://lh4.googleusercontent.com/yvg3PgLp7mO3CruqINvMQO6Vnd0xvT4yVGTJQNFSYUY-6eyu3W8sTNB6jyffJ-ez0kb9LTTp=w16383">
+            
+            <img class="gallery" src="https://lh4.googleusercontent.com/H4BEPQDrQiG8DKXYmjfYZlxcQOT4k4RUz4ernc6ErOuvskF1zymZI5hymYy4pp888JiMEwMqCQ=w16383">
+            
+            <img class="gallery" src="https://lh6.googleusercontent.com/ia-9Hldly74PeqET1dlb_JnsiXpOwtmEal9d-pMPULO4w_Pi46ozvucQ_mr8lLJpHfsvKAw=w16383">
+            <img class="gallery" src="https://lh5.googleusercontent.com/jA-3fBTZXmis2xLEBeO5VJahnGeHXi9oiwNBx-2dBJx1lj2Mur9rkVcs3XWAZ8zLUq8lM_A=w16383">
+            <img class="gallery" src="https://lh5.googleusercontent.com/a5wPGvhfd7SFnhz7yg7AxGoXKokQMxF-ty9DvMzWvwsl9gv9OTUXu7YAHKIV81yUuPocgn6RrA=w16383">
+            <img class="gallery" src="https://lh6.googleusercontent.com/HHIl6anZO79DPUlVHJv0GLibS1ng4UbFgfenpxpWLrr9e-5MYocxJiSWjt1f34Z9rONr_q-J=w16383">
+            <img class="gallery" src="https://lh3.googleusercontent.com/XV5WQJrDyGgLxhcpcu55lLBPXE1eGNh9TcWdbXQU8BfZ_2JHQ0ItNFaHpmewsnW4WZGkNYml=w16383">
             </div>
         </div>
     
